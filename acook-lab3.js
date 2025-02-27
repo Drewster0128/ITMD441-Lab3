@@ -56,3 +56,23 @@ function countVowels(str)
 }
 
 countVowels("winter")
+
+function sortNumbers(lst)
+{
+    for(let i = 1; i < lst.length; i++)
+    {
+        let j = i;
+        while(lst[j] < lst[j-1] && j > 0)
+        {
+            let temp = lst[j];
+            lst[j] = lst[j-1];
+            lst[j-1] = temp;
+            j--;
+        }
+    }
+    console.log(lst);
+}
+
+sortNumbers([9,4,6,2]);
+sortNumbers(Array(Math.floor(Math.random() * 10)).fill(0).map((_) => Math.floor(Math.random() * 100)));
+sortNumbers(Array(Math.floor(Math.random() * 10)).fill(0).map((_) => Math.floor(Math.random() * 100)));
