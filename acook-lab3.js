@@ -28,10 +28,6 @@ function minMaxAverage(lst) {
     console.log(`Total Numbers: ${count}, Min Value: ${min}, Max Value: ${max}, Average: ${avg.toFixed(2)}`);
 }
 
-minMaxAverage([2, 5, 23, 6, 9, 4, 30, 1])
-minMaxAverage(Array(Math.floor(Math.random() * 100)).fill(0).map((_) => Math.floor(Math.random() * 100)));
-minMaxAverage(Array(Math.floor(Math.random() * 100)).fill(0).map((_) => Math.floor(Math.random() * 100)));
-
 //Exercise 2
 function countVowels(str)
 {
@@ -58,10 +54,6 @@ function countVowels(str)
     console.log(`${str}: ${count} vowels`);
 }
 
-countVowels("winter");
-countVowels("");
-countVowels("Drew");
-
 //Exercise 3
 function sortNumbers(lst)
 {
@@ -79,16 +71,26 @@ function sortNumbers(lst)
     console.log(lst);
 }
 
-sortNumbers([9,4,6,2]);
-sortNumbers(Array(Math.floor(Math.random() * 10)).fill(0).map((_) => Math.floor(Math.random() * 100)));
-sortNumbers(Array(Math.floor(Math.random() * 10)).fill(0).map((_) => Math.floor(Math.random() * 100)));
-
 //Exercise 4
 function celsiusToFahrenheit(celsiusTemp)
 {
     let fahrenheitTemp = (celsiusTemp * 9/5) + 32;
     console.log(`${celsiusTemp.toFixed(1)} Celsius = ${fahrenheitTemp.toFixed(1)} Fahrenheit`);
 }
+
+
+//Test Cases
+minMaxAverage([2, 5, 23, 6, 9, 4, 30, 1])
+minMaxAverage(Array(Math.floor(Math.random() * 100)).fill(0).map((_) => Math.floor(Math.random() * 100)));
+minMaxAverage(Array(Math.floor(Math.random() * 100)).fill(0).map((_) => Math.floor(Math.random() * 100)));
+
+countVowels("winter");
+countVowels("");
+countVowels("Drew");
+
+sortNumbers([9,4,6,2]);
+sortNumbers(Array(Math.floor(Math.random() * 10)).fill(0).map((_) => Math.floor(Math.random() * 100)));
+sortNumbers(Array(Math.floor(Math.random() * 10)).fill(0).map((_) => Math.floor(Math.random() * 100)));
 
 celsiusToFahrenheit(30);
 celsiusToFahrenheit(40);
