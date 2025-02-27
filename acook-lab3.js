@@ -91,3 +91,5 @@ function celsiusToFahrenheit(celsiusTemp)
 }
 
 celsiusToFahrenheit(30);
+celsiusToFahrenheit(40);
+celsiusToFahrenheit(15);
