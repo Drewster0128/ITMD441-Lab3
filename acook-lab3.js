@@ -25,7 +25,34 @@ function minMaxAverage(lst) {
 
     let avg = sum/count;
 
-    console.log(`Total Numbers: ${count}, Min Value: ${min}, Max Value: ${max}, Average: ${avg}`)
+    console.log(`Total Numbers: ${count}, Min Value: ${min}, Max Value: ${max}, Average: ${avg}`);
 }
 
 minMaxAverage([2, 5, 23, 6, 9, 4, 30, 1])
+
+function countVowels(str)
+{
+    let vowels = 'aeiou'
+    let count = 0;
+
+    for(let character of str)
+    {
+        let i = 0;
+        while(i < vowels.length && i != -1)
+        {
+            if(character === vowels[i])
+            {
+                count++;
+                i = -1;
+            }
+            else
+            {
+                i++;
+            }
+        }
+    }
+
+    console.log(`${str}: ${count} vowels`);
+}
+
+countVowels("winter")
