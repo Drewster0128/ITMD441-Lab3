@@ -25,10 +25,12 @@ function minMaxAverage(lst) {
 
     let avg = sum/count;
 
-    console.log(`Total Numbers: ${count}, Min Value: ${min}, Max Value: ${max}, Average: ${avg}`);
+    console.log(`Total Numbers: ${count}, Min Value: ${min}, Max Value: ${max}, Average: ${avg.toFixed(2)}`);
 }
 
 minMaxAverage([2, 5, 23, 6, 9, 4, 30, 1])
+minMaxAverage(Array(Math.floor(Math.random() * 100)).fill(0).map((_) => Math.floor(Math.random() * 100)));
+minMaxAverage(Array(Math.floor(Math.random() * 100)).fill(0).map((_) => Math.floor(Math.random() * 100)));
 
 //Exercise 2
 function countVowels(str)
