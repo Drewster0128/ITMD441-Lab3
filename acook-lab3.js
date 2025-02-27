@@ -57,18 +57,20 @@ function countVowels(str)
 //Exercise 3
 function sortNumbers(lst)
 {
-    for(let i = 1; i < lst.length; i++)
+    let sortedArray = Array.from(lst);
+
+    for(let i = 1; i < sortedArray.length; i++)
     {
         let j = i;
-        while(lst[j] < lst[j-1] && j > 0)
+        while(sortedArray[j] < sortedArray[j-1] && j > 0)
         {
-            let temp = lst[j];
-            lst[j] = lst[j-1];
-            lst[j-1] = temp;
+            let temp = sortedArray[j];
+            sortedArray[j] = sortedArray[j-1];
+            sortedArray[j-1] = temp;
             j--;
         }
     }
-    console.log(lst);
+    console.log(`Orginal Array: ${lst}\n Sorted Array: ${sortedArray}`);
 }
 
 //Exercise 4
