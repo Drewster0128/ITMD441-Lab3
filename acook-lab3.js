@@ -30,6 +30,7 @@ function minMaxAverage(lst) {
 
 minMaxAverage([2, 5, 23, 6, 9, 4, 30, 1])
 
+//Exercise 2
 function countVowels(str)
 {
     let vowels = 'aeiou'
@@ -57,6 +58,7 @@ function countVowels(str)
 
 countVowels("winter")
 
+//Exercise 3
 function sortNumbers(lst)
 {
     for(let i = 1; i < lst.length; i++)
@@ -77,6 +79,7 @@ sortNumbers([9,4,6,2]);
 sortNumbers(Array(Math.floor(Math.random() * 10)).fill(0).map((_) => Math.floor(Math.random() * 100)));
 sortNumbers(Array(Math.floor(Math.random() * 10)).fill(0).map((_) => Math.floor(Math.random() * 100)));
 
+//Exercise 4
 function celsiusToFahrenheit(celsiusTemp)
 {
     let fahrenheitTemp = (celsiusTemp * 9/5) + 32;
