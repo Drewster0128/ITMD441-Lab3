@@ -76,3 +76,11 @@ function sortNumbers(lst)
 sortNumbers([9,4,6,2]);
 sortNumbers(Array(Math.floor(Math.random() * 10)).fill(0).map((_) => Math.floor(Math.random() * 100)));
 sortNumbers(Array(Math.floor(Math.random() * 10)).fill(0).map((_) => Math.floor(Math.random() * 100)));
+
+function celsiusToFahrenheit(celsiusTemp)
+{
+    let fahrenheitTemp = (celsiusTemp * 9/5) + 32;
+    console.log(`${celsiusTemp.toFixed(1)} Celsius = ${fahrenheitTemp.toFixed(1)} Fahrenheit`);
+}
+
+celsiusToFahrenheit(30);
