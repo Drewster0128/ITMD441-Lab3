@@ -58,7 +58,9 @@ function countVowels(str)
     console.log(`${str}: ${count} vowels`);
 }
 
-countVowels("winter")
+countVowels("winter");
+countVowels("");
+countVowels("Drew");
 
 //Exercise 3
 function sortNumbers(lst)
